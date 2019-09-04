@@ -4,6 +4,7 @@ import App from './App';
 import Directory from './Components/directory/directory.component'
 import HomePage from './pages/homepage/hompage.component';
 import MenuItem from './Components/menu-item/menu-item.component';
+import {HatsPage }from './App'
 
 
 // Testing components 
@@ -37,13 +38,22 @@ describe('render Directory without crashing', () =>{
 
 
 // MenuItems Component
-describe('renders MenuItem without crashing', ()=>{
-  it('it should render without issues',()=>{
-    const div3 = document.createElement('div')
-    ReactDOM.render(<MenuItem />,div3)
-    ReactDOM.unmountComponentAtNode(div3)
+// describe('renders MenuItem without crashing', ()=>{
+//   it('it should render without issues',()=>{
+//     const div3 = document.createElement('div')
+//     ReactDOM.render(<MenuItem />,div3)
+//     ReactDOM.unmountComponentAtNode(div3)
+//   })
+// })
+
+
+// testing Hats Component
+describe('renders Hats without crashing', () =>{
+  it('it should render without issues', () =>{
+    const div4 = document.createElement('div')
+    ReactDOM.render(<HatsPage />, div4)
+    ReactDOM.unmountComponentAtNode(div4)
   })
 })
-
 
 
