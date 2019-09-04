@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import MenuItem from '../menu-item/menu-item.component';
 
+
+//  Opted for a class component, because I plan on using life cycle methods for 
+// this component
 export default class Directory extends Component {
     constructor(props){
         super(props)
@@ -41,10 +44,12 @@ export default class Directory extends Component {
               
         }
     }
-    render() {
+    render() { 
+        // destructuring state
         const {sections} = this.state
         return (
             <div className = "directory-menu">
+                {/* mapping over MenuItem so that each object recieves its own card component */}
                 {sections.map(({title,imageUrl,id,size}) => (
                     <MenuItem key ={id} title = {title} imgUrl = {imageUrl} size ={size} />
                 ))}
