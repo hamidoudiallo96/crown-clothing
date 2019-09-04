@@ -38,13 +38,13 @@ describe('render Directory without crashing', () =>{
 
 
 // MenuItems Component
-// describe('renders MenuItem without crashing', ()=>{
-//   it('it should render without issues',()=>{
-//     const div3 = document.createElement('div')
-//     ReactDOM.render(<MenuItem />,div3)
-//     ReactDOM.unmountComponentAtNode(div3)
-//   })
-// })
+describe('renders MenuItem without crashing', ()=>{
+  it('it should render without issues',()=>{
+    const div3 = document.createElement('div')
+    ReactDOM.render(<MenuItem />,div3)
+    ReactDOM.unmountComponentAtNode(div3)
+  })
+})
 
 
 // testing Hats Component
