@@ -21,7 +21,7 @@ function App(props) {
   return (
     <div>
       {/* renders HomPage Component */}
-      {/* <HomePage /> */}
+      <HomePage />
       <Link to="/hats">Hats Page</Link>
      
 

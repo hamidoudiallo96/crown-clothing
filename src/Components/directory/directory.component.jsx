@@ -46,7 +46,8 @@ export default class Directory extends Component {
     }
     render() { 
         // destructuring state
-        const {sections} = this.state
+        const {sections} = this.state 
+        console.log('sections:', sections)
         return (
             <div className = "directory-menu">
                 {/* mapping over MenuItem so that each object recieves its own card component */}

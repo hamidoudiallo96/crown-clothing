@@ -17,22 +17,32 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
+// HeaderTitle Component
+describe('renders HeaderTitle without crashing', ()=>{
+  it('should render header title without issue',()=>{
+    const div1 = document.createElement('div')
+    ReactDOM.render(<headerTitle />, div1)
+    ReactDOM.unmountComponentAtNode(div1)
+  })
+}
+)
+
 // HomePage Component
 
 describe('renders Homepage without crashing',()=>{
   it('should render without issues',()=>{
-    const div1 = document.createElement('div')
-    ReactDOM.render(<HomePage />, div1)
-    ReactDOM.unmountComponentAtNode(div1)
+    const div2 = document.createElement('div')
+    ReactDOM.render(<HomePage />, div2)
+    ReactDOM.unmountComponentAtNode(div2)
   })
 })
 
 // Directory Component
 describe('render Directory without crashing', () =>{
   it('it should render without issues',()=>{
-    const div2 = document.createElement('div')
-    ReactDOM.render(<Directory />, div2);
-    ReactDOM.unmountComponentAtNode(div2)
+    const div3 = document.createElement('div')
+    ReactDOM.render(<Directory />, div3);
+    ReactDOM.unmountComponentAtNode(div3)
   })
 })
 
@@ -40,9 +50,9 @@ describe('render Directory without crashing', () =>{
 // MenuItems Component
 describe('renders MenuItem without crashing', ()=>{
   it('it should render without issues',()=>{
-    const div3 = document.createElement('div')
-    ReactDOM.render(<MenuItem />,div3)
-    ReactDOM.unmountComponentAtNode(div3)
+    const div4 = document.createElement('div')
+    ReactDOM.render(<MenuItem />,div4)
+    ReactDOM.unmountComponentAtNode(div4)
   })
 })
 
@@ -50,10 +60,19 @@ describe('renders MenuItem without crashing', ()=>{
 // testing Hats Component
 describe('renders Hats without crashing', () =>{
   it('it should render without issues', () =>{
-    const div4 = document.createElement('div')
-    ReactDOM.render(<HatsPage />, div4)
-    ReactDOM.unmountComponentAtNode(div4)
+    const div5 = document.createElement('div')
+    ReactDOM.render(<HatsPage />, div5)
+    ReactDOM.unmountComponentAtNode(div5)
   })
 })
 
+// TODO:  finish this test
+
+// describe('renders homePage without crashing '), ()=>{
+//   it('it should render withoutt crashing'), ()=>{
+//     const div6 = document.createElement('div')
+//     ReactDOM.render(<HomePage />, div6)
+//     ReactDOM.unmountComponentAtNode(div6)
+//   }
+// }
 
